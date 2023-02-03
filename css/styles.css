@@ -1034,7 +1034,7 @@ label .checkbox-description::before {
     appearance: none;
 }
 
-input:checked + .checkbox-description::before {
+input:not(:checked) + .checkbox-description::before {
     display: block;
     background-size: 15px;
     background-position: center;
