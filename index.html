@@ -12,6 +12,13 @@
         />
 
         <link href="./css/styles.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
 
     <body>
@@ -95,6 +102,111 @@
                                 <use href="./images/icons.svg#icon-close"></use>
                             </svg>
                         </button>
+                        <h4 class="modal-title">
+                            Zostaw swoje dane w formularzu poniżej
+                        </h4>
+                        <form
+                            class="form-container"
+                            name="signup_form"
+                            autocomplete="on"
+                            novalidate
+                        >
+                            <label class="form-label">
+                                <span class="form-label-title">Imię</span>
+                                <div class="form-icon">
+                                    <svg class="form-icon-item">
+                                        <use
+                                            href="./images/icons.svg#icon-Vector-4"
+                                            height="12"
+                                            width="12"
+                                        ></use>
+                                    </svg>
+                                    <input
+                                        class="form-label-box"
+                                        type="name"
+                                        name="name"
+                                    />
+                                </div>
+                            </label>
+
+                            <label class="form-label">
+                                <span class="form-label-title">Telefon</span>
+                                <div class="form-icon">
+                                    <svg class="form-icon-item">
+                                        <use
+                                            href="./images/icons.svg#icon-Vector-3"
+                                            height="12"
+                                            width="12"
+                                        ></use>
+                                    </svg>
+                                    <input
+                                        class="form-label-box"
+                                        type="tel"
+                                        name="tel"
+                                    />
+                                </div>
+                            </label>
+
+                            <label class="form-label">
+                                <span class="form-label-title">Email</span>
+                                <div class="form-icon">
+                                    <svg class="form-icon-item">
+                                        <use
+                                            href="./images/icons.svg#icon-Vector-2"
+                                            height="12"
+                                            width="12"
+                                        ></use>
+                                    </svg>
+                                    <input
+                                        class="form-label-box"
+                                        type="email"
+                                        name="email"
+                                    />
+                                </div>
+                            </label>
+
+                            <label class="comment-conteiner">
+                                <span class="form-label-title">Komentarz</span>
+                                <div class="form-label-text">
+                                    <textarea
+                                        class="comment-label-box"
+                                        name="feedback"
+                                        rows="5"
+                                        placeholder="Wprowadź tekst"
+                                    ></textarea>
+                                </div>
+                            </label>
+                            <label class="checkbox">
+                                <input
+                                    id="cookies"
+                                    type="checkbox"
+                                    name="hobby"
+                                    value="reading"
+                                    checked
+                                />
+                                <div class="checkbox-description">
+                                    <svg class="checkbox-icon-item">
+                                        <use
+                                            href="./images/icons.svg#icon-Vector-5"
+                                            height="8"
+                                            width="11"
+                                        ></use>
+                                    </svg>
+                                    Oświadczam iż akceptuję
+                                    <span class="checkbox-description-color"
+                                        >Regulamin</span
+                                    >
+                                    i
+                                    <span class="checkbox-description-color"
+                                        >Politykę Prywatności.</span
+                                    >
+                                </div>
+                            </label>
+
+                            <button class="button-modal" type="submit">
+                                <span class="button-modal-title">Wyślij</span>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -409,6 +521,37 @@
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </div>
+                </div>
+                <div class="e-mail-input">
+                    <h4 class="e-mail-title">Zapisz się do newslettera</h4>
+                    <form
+                        class="e-mail-form"
+                        name="signup-form"
+                        autocomplete="on"
+                        novalidate
+                    >
+                        <input
+                            class="e-mail-field"
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                        />
+
+                        <button class="e-mail-button" type="submit">
+                            <span class="e-mail-button-text"> Zapisz się</span>
+                            <span class="e-mail-button-icon"
+                                ><svg
+                                    class="e-mail-icon"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-icon-send"
+                                    ></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </footer>

@@ -12,6 +12,13 @@
         />
 
         <link href="./css/styles.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
     </head>
 
     <body>
@@ -354,6 +361,37 @@
                             <use href="./images/icons.svg#icon-linkedin"></use>
                         </svg>
                     </div>
+                </div>
+                <div class="e-mail-input">
+                    <h4 class="e-mail-title">Zapisz się do newslettera</h4>
+                    <form
+                        class="e-mail-form"
+                        name="signup-form"
+                        autocomplete="on"
+                        novalidate
+                    >
+                        <input
+                            class="e-mail-field"
+                            type="email"
+                            name="email"
+                            placeholder="E-mail"
+                        />
+
+                        <button class="e-mail-button" type="submit">
+                            <span class="e-mail-button-text"> Zapisz się</span>
+                            <span class="e-mail-button-icon"
+                                ><svg
+                                    class="e-mail-icon"
+                                    width="24"
+                                    height="24"
+                                >
+                                    <use
+                                        href="./images/icons.svg#icon-icon-send"
+                                    ></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </footer>
